@@ -15,9 +15,8 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(food,money,mealTime){
-  // name: food, price: money, category: mealTime;
-   return createMenuItem();
+function createMenuItem(name, price, category){
+  return {name, price, category};
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -71,8 +70,8 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-reviews[5];
-console.log(reviews[5]);
+// reviews[5];
+// console.log(reviews[5]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Using the reviews array above do the following: (no function needed) 
