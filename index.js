@@ -50,15 +50,15 @@ export const burger = {
   category: "Lunch", 
   discount: function(string){
     if(string === "teacher"){
-      return burger.price - (burger.price * 0.25);
+      return burger.price * 0.75;
     }else if(string === "student"){
-      return burger.price - (burger.price * 0.25);
+      return burger.price * 0.75;
     }else if(string === "public"){
-      return burger.price - (burger.price * 0.10);
+      return burger.price * 0.90;
     }
   }
 }
-// console.log(burger.discount("teacher"));
+// console.log(burger.discount("public"));
 
 
 
@@ -115,6 +115,8 @@ Use the getReviewByIndex function below to do the following:
 function getReviewByIndex(array, index) {
   if(array[index]){
   return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`;
+  }else {
+    return "invalid request";
   }
 }
 
